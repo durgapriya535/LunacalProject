@@ -1,0 +1,53 @@
+/* index.css or App.css */
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: black; /* RemoveSet the background color to black */
+  color: white; /* Optional: set text color to white for better visibility */
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 25.2px;
+  text-align: left;
+  
+  height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  width: 100vw; /* Ensure the body takes up the full width of the viewport */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#root {
+  min-height: 100vh; /* Ensure the root element covers the full viewport */
+  display: flex; /* Optional: for centering content */
+  justify-content: center; /* Optional: for centering content */
+  align-items: center; /* Optional: for centering content */
+}
+
+.custom-scrollbar {
+  overflow-y: scroll; /* Ensure the scrollbar is always present */
+}
+/* Custom scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #4a5568; /* Scrollbar track color */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners for thumb */
+  border: 2px solid #4a5568; /* Space between thumb and edge */
+}
+
+/* Always show scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox property for thin scrollbar */
+  scrollbar-color: #a0aec0 #4a5568; /* Firefox scrollbar colors */
+}
